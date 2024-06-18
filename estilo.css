@@ -51,6 +51,7 @@ table {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     height: 60vh;
+    margin-bottom: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -59,7 +60,7 @@ table {
     background-image: radial-gradient(circle at 50% 50%, #2f2c79 35%, #252440 90%);
 }
 .countainer h2{
-    font-size: 500%;
+    font-size: 750%;
     font-weight: bold;
 }
 .top-countainer, .sub-countainer{
@@ -68,6 +69,26 @@ table {
 .top-countainer{
     display: flex;
     align-items: center;
+}
+.top-countainer a{
+    margin-left: 5%;
+    justify-content: flex-end;
+}
+.top-countainer img:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+#top-p, #sub-p{
+    display: flex;
+    width: 58%;
+}
+#top-p{
+    text-align: left;
+}
+#sub-p{
+    text-indent: 25%;
+    text-align: right;
 }
 .top-countainer img{
     height: 35px;
