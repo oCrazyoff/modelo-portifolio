@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <!--FONTE DO GOOGLE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,29 +14,33 @@
         rel="stylesheet">
     <!--ICONS BOOTSTRAP-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--JS-->
+    <script src="js/menu.js" defer></script>
+    <script src="js/port.js" defer></script>
+    <script src="js/form.js"></script>
     <title>Inicio</title>
 </head>
 
-<body>
+<body id="inicio">
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="">
+                <a href="#inicio">
                     <img src="images/logo.png" alt="Minha Logo">
                 </a>
             </div><!--logo-->
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="">ESPECIALIDADES</a></li>
-                    <li><a href="">SOBRE</a></li>
-                    <li><a href="">PROJETOS</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#diferenciais">ESPECIALIDADES</a></li>
+                    <li><a href="#sobre">SOBRE</a></li>
+                    <li><a href="#projetos">PROJETOS</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                <a href="#contato">
+                <a href="mailto:walyssonribeiro3@gmail.com">
                     <button>CONTATO</button>
                 </a>
             </div><!--btn-contato-->
@@ -48,15 +53,15 @@
                 </div><!--btn-fechar-->
                 <nav>
                     <ul>
-                        <li><a href="">INICIO</a></li>
-                        <li><a href="">ESPECIALIDADES</a></li>
-                        <li><a href="">SOBRE</a></li>
-                        <li><a href="">PROJETOS</a></li>
-                        <li><a href="">CONTATO</a></li>
+                        <li><a href="#inicio">INICIO</a></li>
+                        <li><a href="#diferenciais">ESPECIALIDADES</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#projetos">PROJETOS</a></li>
+                        <li><a href="mailto:walyssonribeiro3@gmail.com">CONTATO</a></li>
                     </ul>
                 </nav>
             </div><!--menu-mobile-->
-            <div class="overlay-menu" id="overlay-menu"></div><!--overlay-menu-->
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!--interface-->
     </header>
 
@@ -77,7 +82,7 @@
                             software.
                         </p>
                         <div class="btn-contato">
-                            <a href="#contato">
+                            <a href="mailto:walyssonribeiro3@gmail.com">
                                 <button>ENTRE EM CONTATO</button>
                             </a>
                         </div>
@@ -91,6 +96,7 @@
             </div><!--INTERFACE-->
         </section><!--TOPO-SITE-->
 
+        <div class="space" id="diferenciais"></div>
         <section class="diferenciais">
             <div class="interface">
                 <h2 class="titulo">MEUS <span>DIFERENCIAIS!</span></h2>
@@ -99,9 +105,11 @@
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse vel earum eveniet
-                            pariatur voluptas officia iste similique minima, delectus quidem quasi
-                            tempora, unde aut! Molestias architecto reiciendis ducimus veritatis praesentium?
+                            Desenvolvo websites visualmente atraentes e intuitivos, utilizando HTML, CSS e JavaScript.
+                            Foco em interfaces dinâmicas e responsivas, garantindo uma ótima experiência em todos os
+                            dispositivos. Comprometo-me em criar sites que refletem a identidade visual e os objetivos
+                            do
+                            cliente.
                         </p>
                     </div><!--especialidades-box-->
 
@@ -109,9 +117,10 @@
                         <i class="bi bi-cart"></i>
                         <h3>Lojas</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse vel earum eveniet
-                            pariatur voluptas officia iste similique minima, delectus quidem quasi
-                            tempora, unde aut! Molestias architecto reiciendis ducimus veritatis praesentium?
+                            Crio lojas online funcionais e otimizadas, utilizando HTML, CSS e JavaScript.
+                            Desenvolvo interfaces intuitivas que facilitam a navegação e a finalização de compras,
+                            aumentando a satisfação do cliente. Minha meta é construir lojas seguras, escaláveis e
+                            adaptadas às necessidades do negócio.
                         </p>
                     </div><!--especialidades-box-->
 
@@ -119,15 +128,17 @@
                         <i class="bi bi-wordpress"></i>
                         <h3>Blog</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse vel earum eveniet
-                            pariatur voluptas officia iste similique minima, delectus quidem quasi
-                            tempora, unde aut! Molestias architecto reiciendis ducimus veritatis praesentium?
+                            Desenvolvo blogs atraentes e funcionais com HTML, CSS e JavaScript. Foco em layouts fáceis
+                            de ler e navegar, garantindo uma ótima experiência de usuário. Otimizo desempenho e SEO para
+                            boa visibilidade nos motores de busca, criando plataformas robustas e flexíveis para
+                            publicação de conteúdo.
                         </p>
                     </div><!--especialidades-box-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--diferenciais-->
 
+        <div class="space" id="sobre"></div>
         <section class="sobre">
             <div class="interface">
                 <div class="flex">
@@ -137,43 +148,49 @@
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU O WALYSSON!</span></h2>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum aut, possimus
-                            repellat magni odio voluptatibus eum voluptates nam saepe molestias, totam, quisquam
-                            debitis! Itaque cum ducimus eos nisi dicta.
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus expedita,
-                            accusantium eveniet in sed nulla tenetur facilis, distinctio nemo, ut numquam.
-                            Cum, eligendi vero! Asperiores aliquid reprehenderit eaque quas.
+                            Sou um desenvolvedor front-end de 19 anos, atualmente cursando Sistemas de Informação.
+                            Minha paixão pela tecnologia me levou a explorar diversas áreas, com um foco especial em
+                            desenvolvimento web. Tenho experiência prática com HTML, CSS e JavaScript, habilidades que
+                            me permitem criar interfaces de usuário dinâmicas e responsivas. Sempre busco expandir meu
+                            conhecimento e me manter atualizado com as melhores práticas e novas tecnologias no campo
+                            do desenvolvimento de software.
                         </p>
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam nostrum aut, possimus
-                            repellat magni odio voluptatibus eum voluptates nam saepe molestias, totam, quisquam
-                            debitis! Itaque cum ducimus eos nisi dicta.
+                            Meu objetivo é continuar crescendo profissionalmente e contribuir para projetos desafiadores
+                            que possam causar um impacto positivo. Estou constantemente aprendendo e aprimorando minhas
+                            habilidades, pronto para enfrentar novos desafios e transformar ideias em realidade através
+                            do código. Além disso, valorizo o trabalho em equipe e a troca de conhecimento, acreditando
+                            que a colaboração é essencial para o sucesso em qualquer projeto de desenvolvimento.
                         </p>
                         <div class="btn-social">
-                            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href=""><button><i class="bi bi-github"></i></button></a>
-                            <a href=""><button><i class="bi bi-file-earmark-text"></i></button></a>
+                            <a href="https://www.linkedin.com/in/walysson-ribeiro-a92ba3260/" target="_blank"><button><i
+                                        class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/oCrazyoff" target="_blank"><button><i
+                                        class="bi bi-github"></i></button></a>
+                            <a href="https://drive.google.com/drive/folders/10R9T-chN2yikaL-_Hbh7-tCRBtGQM-db?usp=drive_link"
+                                target="_blank"><button><i class="bi bi-file-earmark-text"></i></button></a>
                         </div><!--btn-sobre-->
                     </div><!--txt-sobre-->
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--sobre-->
 
+        <div class="space" id="projetos"></div>
         <section class="portifolio">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTIFOLIO!</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/img-site-info.jpeg);">
+                    <div class="img-port" style="background-image: url(images/projetos/img-site-info.jpeg);">
                         <a href="https://ocrazyoff.github.io/infojogos/index.html" target="_blank">
                             <div class="overlay">INFO GAMES</div>
                         </a>
                     </div>
-                    <div class="img-port" style="background-image: url(images/img-site-pdf.jpeg);">
+                    <div class="img-port" style="background-image: url(images/projetos/img-site-pdf.jpeg);">
                         <a href="https://www.ilovepdf.com/" target="_blank">
                             <div class="overlay">I LOVE PDF</div>
                         </a>
                     </div>
-                    <div class="img-port" style="background-image: url(images/img-site-roblox.jpeg);">
+                    <div class="img-port" style="background-image: url(images/projetos/img-site-roblox.jpeg);">
                         <a href="https://www.roblox.com/home" target="_blank">
                             <div class="overlay">ROBLOX</div>
                         </a>
@@ -182,20 +199,6 @@
                 </div><!--flex-->
             </div><!--interface-->
         </section><!--portifolio-->
-
-        <section class="formulario" id="contato">
-            <div class="interface">
-                <h2 class="titulo">FALE <span>COMIGO!</span></h2>
-
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-                </form>
-
-            </div><!--interface-->
-        </section><!--formulario-->
     </main>
 
     <footer>
@@ -220,7 +223,6 @@
             </div><!--line-footer-->
         </div><!--interface-->
     </footer>
-<script src="menu.js"></script>
 </body>
 
 </html>
