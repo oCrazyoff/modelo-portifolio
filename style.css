@@ -24,8 +24,8 @@ body {
     width: 190px;
 }
 .space{
-    height: 10vh;
-    margin-top: -10vh;
+    height: 15vh;
+    margin-top: -15vh;
 }
 .btn-contato button {
     padding: 1em 3em;
@@ -156,7 +156,7 @@ header nav.menu-desktop ul li {
 /* TOPO DO SITE */
 
 section.topo-site {
-    padding: 9em 10%;
+    padding: 9em 14%;
 }
 section.topo-site .flex {
     align-items: center;
