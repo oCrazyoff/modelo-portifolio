@@ -413,6 +413,9 @@ footer .icon-social i:hover {
     .btn-contato {
         display: none;
     }
+    header nav a:hover::after{
+        display: none;
+    }
 
     /* topo do site */
     section.topo-site .flex {
