@@ -6,35 +6,44 @@
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: #000814;
     width: 2vh;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: #EE9B00;
     border-radius: 5px;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #023047;
     height: 100vh;
 }
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .flex {
     display: flex;
 }
+
 .logo img {
     width: 190px;
 }
-.space{
+
+.space {
     height: 15vh;
     margin-top: -15vh;
 }
+
 .btn-contato button {
     padding: 1em 3em;
     font-size: 15px;
@@ -47,6 +56,7 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
+
 .btn-social button {
     width: 3em;
     height: 50px;
@@ -60,16 +70,19 @@ body {
     margin: 1% 1%;
     transition: 0.2s;
 }
-button:hover{
+
+button:hover {
     background-color: #EE9B00;
     outline: 0;
     color: #000000;
 }
+
 .titulo {
     color: white;
     font-size: 35px;
     text-align: center;
 }
+
 h2.titulo span {
     color: #EE9B00;
 }
@@ -83,23 +96,28 @@ header {
     padding: 1% 4%;
     background-color: #000814;
 }
+
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header a {
     color: rgb(170, 170, 170);
     text-decoration: none;
     display: inline-block;
 }
-header nav a{
+
+header nav a {
     position: relative;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: white;
 }
-header nav a::after{
+
+header nav a::after {
     content: "";
     display: block;
     width: 0;
@@ -107,12 +125,15 @@ header nav a::after{
     background-color: white;
     transition: .2s;
 }
-header a:hover::after{
+
+header a:hover::after {
     width: 100%;
 }
+
 header nav ul {
     list-style-type: none;
 }
+
 header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 3em;
@@ -123,7 +144,9 @@ header nav.menu-desktop ul li {
     color: #EE9B00;
     display: none;
     font-size: 50px;
+    cursor: pointer;
 }
+
 .overlay-menu {
     background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
@@ -134,6 +157,7 @@ header nav.menu-desktop ul li {
     left: 0;
     z-index: 40;
 }
+
 .menu-mobile {
     background-color: #000000;
     height: 100vh;
@@ -145,15 +169,19 @@ header nav.menu-desktop ul li {
     z-index: 50;
     transition: 0.3s;
 }
+
 .menu-mobile.abrir-menu {
     width: 70%;
 }
+
 .menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
+
 .menu-mobile nav ul {
     text-align: right;
 }
+
 .menu-mobile nav ul li a {
     color: white;
     font-size: 20px;
@@ -161,13 +189,17 @@ header nav.menu-desktop ul li {
     display: block;
     padding: 1em 10%;
 }
+
 .menu-mobile nav ul li a:hover {
     background-color: #EE9B00;
     color: black;
 }
+
 .menu-mobile .btn-fechar {
     padding: 1% 5%;
+    cursor: pointer;
 }
+
 .menu-mobile .btn-fechar i {
     color: #EE9B00;
     font-size: 4em;
@@ -178,27 +210,33 @@ header nav.menu-desktop ul li {
 section.topo-site {
     padding: 9em 14%;
 }
+
 section.topo-site .flex {
     align-items: center;
     justify-content: center;
     gap: 15%;
 }
+
 .topo-site h1 {
     color: white;
     font-size: 50px;
 }
+
 .topo-site .txt-topo-site h1 span {
     color: #EE9B00;
 }
+
 .topo-site .txt-topo-site p {
     color: white;
     margin: 4% 0;
 }
+
 .topo-site .img-topo-site img {
     position: relative;
     width: 350px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
+
 @keyframes flutuar {
     0% {
         top: 0;
@@ -215,9 +253,11 @@ section.diferenciais {
     padding: 2em 5%;
     background-color: #001233;
 }
+
 section.diferenciais .flex {
     gap: 5%;
 }
+
 .diferenciais .diferenciais-box {
     color: white;
     padding: 5%;
@@ -226,15 +266,18 @@ section.diferenciais .flex {
     border: 2px solid transparent;
     transition: 0.5s;
 }
+
 .diferenciais .diferenciais-box:hover,
 .diferenciais .diferenciais-box.active {
     transform: scale(1.05);
     border: 2px solid #EE9B00;
 }
+
 .diferenciais .diferenciais-box i {
     font-size: 70px;
     color: #EE9B00;
 }
+
 .diferenciais .diferenciais-box h3 {
     font-size: 35px;
     margin: 5% 0;
@@ -245,26 +288,32 @@ section.diferenciais .flex {
 section.sobre {
     padding: 5em 5%;
 }
+
 section.sobre .img-sobre img {
     border-radius: 10px;
     width: 25em;
 }
+
 section.sobre .flex {
     align-items: center;
     gap: 3%;
 }
+
 .sobre .txt-sobre {
     color: white;
 }
+
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 97%;
     margin-bottom: 4%;
 }
+
 .sobre .txt-sobre h2 span {
     color: #EE9B00;
     display: block;
 }
+
 .sobre .txt-sobre p {
     margin: 3% 0;
     text-align: justify;
@@ -276,10 +325,12 @@ section.portifolio {
     padding: 4em 4%;
     background-color: #001233;
 }
+
 section.portifolio .flex {
     justify-content: space-around;
     gap: 1em;
 }
+
 .img-port {
     width: 360px;
     height: 460px;
@@ -291,14 +342,17 @@ section.portifolio .flex {
     cursor: pointer;
     transition: 5s;
 }
+
 .img-port:hover,
 .img-port.active {
     background-position: 100% 100%;
 }
+
 .overlay:hover,
-.img-port.active .overlay{
+.img-port.active .overlay {
     opacity: 1;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -319,14 +373,16 @@ section.portifolio .flex {
 
 /* contato */
 
-section.contato{
+section.contato {
     padding: 4em 5%;
 }
-section.contato .flex{
+
+section.contato .flex {
     align-items: center;
     justify-content: center;
 }
-section.contato .btn-contato{
+
+section.contato .btn-contato {
     margin-top: 5%;
 }
 
@@ -353,7 +409,7 @@ footer .line-footer p i {
     font-size: 22px;
 }
 
-footer .icon-social{
+footer .icon-social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -361,7 +417,7 @@ footer .icon-social{
     gap: 1em;
 }
 
-footer .line-footer a{
+footer .line-footer a {
     text-decoration: none;
     font-size: 22px;
     color: white;
@@ -371,7 +427,7 @@ footer .line-footer a{
     border-top: 2px solid #EE9B00;
 }
 
-footer .icon-social i{
+footer .icon-social i {
     color: #EE9B00;
     font-size: 35px;
     transition: 0.2s;
@@ -389,11 +445,13 @@ footer .icon-social i:hover {
     .flex {
         flex-direction: column;
     }
+
     .titulo,
     h1,
     h2 {
         text-align: center;
     }
+
     section.topo-site,
     section.diferenciais,
     section.sobre,
@@ -401,10 +459,12 @@ footer .icon-social i:hover {
     section.formulario {
         padding: 3em 5%;
     }
+
     .btn-abrir-menu i {
         display: block;
     }
-    header .logo img{
+
+    header .logo img {
         width: 50%;
     }
 
@@ -413,7 +473,8 @@ footer .icon-social i:hover {
     .btn-contato {
         display: none;
     }
-    header nav a:hover::after{
+
+    header nav a:hover::after {
         display: none;
     }
 
@@ -422,9 +483,11 @@ footer .icon-social i:hover {
         flex-direction: column-reverse;
         gap: 1.5em;
     }
-    .topo-site h1{
+
+    .topo-site h1 {
         font-size: 45px;
     }
+
     .topo-site .img-topo-site img {
         width: 100%;
     }
@@ -433,18 +496,23 @@ footer .icon-social i:hover {
     section.sobre .flex {
         gap: 1em;
     }
+
     section.sobre .img-sobre img {
         width: 19em;
     }
-    .sobre .txt-sobre h2{
+
+    .sobre .txt-sobre h2 {
         font-size: 30px;
     }
-    .sobre .txt-sobre p{
+
+    .sobre .txt-sobre p {
         text-align: left;
     }
+
     .btn-social {
         text-align: center;
     }
+
     .btn-social button {
         width: 2em;
     }
@@ -455,12 +523,13 @@ footer .icon-social i:hover {
         margin: 0 auto;
         margin-top: 5%;
     }
+
     section.portifolio .flex {
         gap: 2em;
     }
 
     /* contato */
-    section.contato .btn-contato{
+    section.contato .btn-contato {
         display: block;
     }
 
@@ -468,14 +537,17 @@ footer .icon-social i:hover {
     footer .line-footer {
         text-align: center;
     }
+
     footer .line-footer a {
         font-size: 1em;
     }
+
     footer .flex .icon-social {
         width: 100%;
         margin-top: 5%;
     }
 }
+
 /* GERAL */
 
 * {
@@ -484,35 +556,44 @@ footer .icon-social i:hover {
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
     background-color: #000814;
     width: 2vh;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: #EE9B00;
     border-radius: 5px;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 body {
     background-color: #023047;
     height: 100vh;
 }
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
+
 .flex {
     display: flex;
 }
+
 .logo img {
     width: 190px;
 }
-.space{
+
+.space {
     height: 15vh;
     margin-top: -15vh;
 }
+
 .btn-contato button {
     padding: 1em 3em;
     font-size: 15px;
@@ -525,6 +606,7 @@ body {
     cursor: pointer;
     transition: 0.2s;
 }
+
 .btn-social button {
     width: 3em;
     height: 50px;
@@ -538,16 +620,19 @@ body {
     margin: 1% 1%;
     transition: 0.2s;
 }
-button:hover{
+
+button:hover {
     background-color: #EE9B00;
     outline: 0;
     color: #000000;
 }
+
 .titulo {
     color: white;
     font-size: 35px;
     text-align: center;
 }
+
 h2.titulo span {
     color: #EE9B00;
 }
@@ -561,23 +646,28 @@ header {
     padding: 1% 4%;
     background-color: #000814;
 }
+
 header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 header a {
     color: rgb(170, 170, 170);
     text-decoration: none;
     display: inline-block;
 }
-header nav a{
+
+header nav a {
     position: relative;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: white;
 }
-header nav a::after{
+
+header nav a::after {
     content: "";
     display: block;
     width: 0;
@@ -585,12 +675,15 @@ header nav a::after{
     background-color: white;
     transition: .2s;
 }
-header a:hover::after{
+
+header a:hover::after {
     width: 100%;
 }
+
 header nav ul {
     list-style-type: none;
 }
+
 header nav.menu-desktop ul li {
     display: inline-block;
     padding: 0 3em;
@@ -602,6 +695,7 @@ header nav.menu-desktop ul li {
     display: none;
     font-size: 50px;
 }
+
 .overlay-menu {
     background-color: rgba(0, 0, 0, 0.555);
     width: 100%;
@@ -612,6 +706,7 @@ header nav.menu-desktop ul li {
     left: 0;
     z-index: 40;
 }
+
 .menu-mobile {
     background-color: #000000;
     height: 100vh;
@@ -623,15 +718,19 @@ header nav.menu-desktop ul li {
     z-index: 50;
     transition: 0.3s;
 }
+
 .menu-mobile.abrir-menu {
     width: 70%;
 }
+
 .menu-mobile.abrir-menu~.overlay-menu {
     display: block;
 }
+
 .menu-mobile nav ul {
     text-align: right;
 }
+
 .menu-mobile nav ul li a {
     color: white;
     font-size: 20px;
@@ -639,13 +738,16 @@ header nav.menu-desktop ul li {
     display: block;
     padding: 1em 10%;
 }
+
 .menu-mobile nav ul li a:hover {
     background-color: #EE9B00;
     color: black;
 }
+
 .menu-mobile .btn-fechar {
     padding: 1% 5%;
 }
+
 .menu-mobile .btn-fechar i {
     color: #EE9B00;
     font-size: 4em;
@@ -656,27 +758,33 @@ header nav.menu-desktop ul li {
 section.topo-site {
     padding: 9em 14%;
 }
+
 section.topo-site .flex {
     align-items: center;
     justify-content: center;
     gap: 15%;
 }
+
 .topo-site h1 {
     color: white;
     font-size: 50px;
 }
+
 .topo-site .txt-topo-site h1 span {
     color: #EE9B00;
 }
+
 .topo-site .txt-topo-site p {
     color: white;
     margin: 4% 0;
 }
+
 .topo-site .img-topo-site img {
     position: relative;
     width: 350px;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
+
 @keyframes flutuar {
     0% {
         top: 0;
@@ -693,9 +801,11 @@ section.diferenciais {
     padding: 2em 5%;
     background-color: #001233;
 }
+
 section.diferenciais .flex {
     gap: 5%;
 }
+
 .diferenciais .diferenciais-box {
     color: white;
     padding: 5%;
@@ -704,15 +814,18 @@ section.diferenciais .flex {
     border: 2px solid transparent;
     transition: 0.5s;
 }
+
 .diferenciais .diferenciais-box:hover,
 .diferenciais .diferenciais-box.active {
     transform: scale(1.05);
     border: 2px solid #EE9B00;
 }
+
 .diferenciais .diferenciais-box i {
     font-size: 70px;
     color: #EE9B00;
 }
+
 .diferenciais .diferenciais-box h3 {
     font-size: 35px;
     margin: 5% 0;
@@ -723,26 +836,32 @@ section.diferenciais .flex {
 section.sobre {
     padding: 5em 5%;
 }
+
 section.sobre .img-sobre img {
     border-radius: 10px;
     width: 25em;
 }
+
 section.sobre .flex {
     align-items: center;
     gap: 3%;
 }
+
 .sobre .txt-sobre {
     color: white;
 }
+
 .sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 97%;
     margin-bottom: 4%;
 }
+
 .sobre .txt-sobre h2 span {
     color: #EE9B00;
     display: block;
 }
+
 .sobre .txt-sobre p {
     margin: 3% 0;
     text-align: justify;
@@ -754,10 +873,12 @@ section.portifolio {
     padding: 4em 4%;
     background-color: #001233;
 }
+
 section.portifolio .flex {
     justify-content: space-around;
     gap: 1em;
 }
+
 .img-port {
     width: 360px;
     height: 460px;
@@ -769,14 +890,17 @@ section.portifolio .flex {
     cursor: pointer;
     transition: 5s;
 }
+
 .img-port:hover,
 .img-port.active {
     background-position: 100% 100%;
 }
+
 .overlay:hover,
-.img-port.active .overlay{
+.img-port.active .overlay {
     opacity: 1;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -797,14 +921,16 @@ section.portifolio .flex {
 
 /* contato */
 
-section.contato{
+section.contato {
     padding: 4em 5%;
 }
-section.contato .flex{
+
+section.contato .flex {
     align-items: center;
     justify-content: center;
 }
-section.contato .btn-contato{
+
+section.contato .btn-contato {
     margin-top: 5%;
 }
 
@@ -831,7 +957,7 @@ footer .line-footer p i {
     font-size: 22px;
 }
 
-footer .icon-social{
+footer .icon-social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -839,7 +965,7 @@ footer .icon-social{
     gap: 1em;
 }
 
-footer .line-footer a{
+footer .line-footer a {
     text-decoration: none;
     font-size: 22px;
     color: white;
@@ -849,7 +975,7 @@ footer .line-footer a{
     border-top: 2px solid #EE9B00;
 }
 
-footer .icon-social i{
+footer .icon-social i {
     color: #EE9B00;
     font-size: 35px;
     transition: 0.2s;
@@ -867,11 +993,13 @@ footer .icon-social i:hover {
     .flex {
         flex-direction: column;
     }
+
     .titulo,
     h1,
     h2 {
         text-align: center;
     }
+
     section.topo-site,
     section.diferenciais,
     section.sobre,
@@ -879,10 +1007,12 @@ footer .icon-social i:hover {
     section.formulario {
         padding: 3em 5%;
     }
+
     .btn-abrir-menu i {
         display: block;
     }
-    header .logo img{
+
+    header .logo img {
         width: 50%;
     }
 
@@ -891,7 +1021,8 @@ footer .icon-social i:hover {
     .btn-contato {
         display: none;
     }
-    header nav a:hover::after{
+
+    header nav a:hover::after {
         display: none;
     }
 
@@ -900,9 +1031,11 @@ footer .icon-social i:hover {
         flex-direction: column-reverse;
         gap: 1.5em;
     }
-    .topo-site h1{
+
+    .topo-site h1 {
         font-size: 45px;
     }
+
     .topo-site .img-topo-site img {
         width: 100%;
     }
@@ -911,18 +1044,23 @@ footer .icon-social i:hover {
     section.sobre .flex {
         gap: 1em;
     }
+
     section.sobre .img-sobre img {
         width: 19em;
     }
-    .sobre .txt-sobre h2{
+
+    .sobre .txt-sobre h2 {
         font-size: 30px;
     }
-    .sobre .txt-sobre p{
+
+    .sobre .txt-sobre p {
         text-align: left;
     }
+
     .btn-social {
         text-align: center;
     }
+
     .btn-social button {
         width: 2em;
     }
@@ -933,12 +1071,13 @@ footer .icon-social i:hover {
         margin: 0 auto;
         margin-top: 5%;
     }
+
     section.portifolio .flex {
         gap: 2em;
     }
 
     /* contato */
-    section.contato .btn-contato{
+    section.contato .btn-contato {
         display: block;
     }
 
@@ -946,9 +1085,11 @@ footer .icon-social i:hover {
     footer .line-footer {
         text-align: center;
     }
+
     footer .line-footer a {
         font-size: 1em;
     }
+
     footer .flex .icon-social {
         width: 100%;
         margin-top: 5%;
