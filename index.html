@@ -32,7 +32,7 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="#inicio">INICIO</a></li>
-                    <li><a href="#diferenciais">ESPECIALIDADES</a></li>
+                    <li><a href="#diferenciais">DIFERENCIAIS</a></li>
                     <li><a href="#sobre">SOBRE</a></li>
                     <li><a href="#projetos">PROJETOS</a></li>
                 </ul>
@@ -53,7 +53,7 @@
                 <nav>
                     <ul>
                         <li><a href="#inicio">INICIO</a></li>
-                        <li><a href="#diferenciais">ESPECIALIDADES</a></li>
+                        <li><a href="#diferenciais">DIFERENCIAIS</a></li>
                         <li><a href="#sobre">SOBRE</a></li>
                         <li><a href="#projetos">PROJETOS</a></li>
                         <li><a href="mailto:contato@email.com">CONTATO</a></li>
@@ -99,8 +99,8 @@
                 <h2 class="titulo">MEUS <span>DIFERENCIAIS!</span></h2>
                 <div class="flex">
                     <div class="diferenciais-box">
-                        <i class="bi bi-code-square"></i>
-                        <h3>Website</h3>
+                        <i class="bi bi-person-workspace"></i>
+                        <h3>Gerência</h3>
                         <p>
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptates assumenda atque
                             ullam cupiditate doloribus earum corporis eveniet nobis nam soluta enim magnam, labore est
@@ -109,8 +109,8 @@
                     </div><!--especialidades-box-->
 
                     <div class="diferenciais-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Lojas</h3>
+                        <i class="bi bi-chat-left"></i>
+                        <h3>Comunicação</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsa, dolore unde voluptates
                             dolor earum ab cupiditate itaque impedit, debitis exercitationem omnis culpa deleniti
@@ -120,8 +120,8 @@
                     </div><!--especialidades-box-->
 
                     <div class="diferenciais-box">
-                        <i class="bi bi-wordpress"></i>
-                        <h3>Blog</h3>
+                        <i class="bi bi-person-raised-hand"></i>
+                        <h3>Liderança</h3>
                         <p>
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum vel minima porro dicta
                             maiores magnam repellendus amet debitis nobis necessitatibus sint iure consectetur explicabo
@@ -140,7 +140,7 @@
                         <img src="images/foto-sobre.png" alt="Minha Foto">
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
-                        <h2>BIOGRAFIA SOBRE <span>RODRIGO!</span></h2>
+                        <h2>MINHA <span>BIOGRAFIA!</span></h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero voluptatum voluptates hic
                             enim, suscipit temporibus nobis aut quaerat assumenda odio consequuntur sit culpa harum
@@ -158,8 +158,8 @@
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/" target="_blank"><button><i
                                         class="bi bi-linkedin"></i></button></a>
-                            <a href="https://github.com/" target="_blank"><button><i
-                                        class="bi bi-github"></i></button></a>
+                            <a href="https://web.whatsapp.com/" target="_blank"><button><i
+                                        class="bi bi-whatsapp"></i></button></a>
                             <a href="https://docs.google.com/" target="_blank"><button><i
                                         class="bi bi-file-earmark-text"></i></button></a>
                         </div><!--btn-sobre-->
@@ -173,19 +173,19 @@
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTIFOLIO!</span></h2>
                 <div class="flex">
-                    <div class="img-port" style="background-image: url(images/projetos/img-site-netflix.jpeg);">
-                        <a href="https://www.netflix.com/" target="_blank">
-                            <div class="overlay">NETFLIX</div>
+                    <div class="img-port" style="background-image: url(images/portifolio/img-artigo1.jpg);">
+                        <a href="doc/Artigo negocio domestico.docx" download="Artigo negocio domestico.docx" target="_blank">
+                            <div class="overlay">ARTIGO <br>NEGÓCIO DOMESTICO</div>
                         </a>
                     </div>
-                    <div class="img-port" style="background-image: url(images/projetos/img-site-amazon.jpeg);">
-                        <a href="https://www.amazon.com.br/" target="_blank">
-                            <div class="overlay">AMAZON</div>
+                    <div class="img-port" style="background-image: url(images/portifolio/img-artigo2.jpg);">
+                        <a href="doc/Artigo arquitetura.docx" download="Artigo arquitetura.docx" target="_blank">
+                            <div class="overlay">ARTIGO <br>ARQUITETURA</div>
                         </a>
                     </div>
-                    <div class="img-port" style="background-image: url(images/projetos/img-site-roblox.jpeg);">
-                        <a href="https://www.roblox.com/home" target="_blank">
-                            <div class="overlay">ROBLOX</div>
+                    <div class="img-port" style="background-image: url(images/portifolio/img-planonegocios.jpg);">
+                        <a href="doc/Plano de negocios.docx" download="Plano de negocios.docx" target="_blank">
+                            <div class="overlay">PLANO DE NEGOCIOS</div>
                         </a>
                     </div>
 
@@ -197,12 +197,17 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO!</span></h2>
                 <div class="flex">
-                    <div class="btn-contato">
-                        <a href="mailto:contato@email.com">
-                            <button>CONTATO</button>
-                        </a>
-                    </div><!--btn-contato-->
-                </div>
+                    <form action="https://formsubmit.co/contato@email.com" method="post">
+                        <label for="name">Nome:</label>
+                        <input type="text" name="name" placeholder="Seu nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="Seu email" required>
+                        <label for="message">Mensagem:</label>
+                        <textarea name="message" id="message" placeholder="Sua mensagem" required></textarea>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:3000/obrigado.html">
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div><!--flex-->
             </div><!--interface-->
         </section><!--contato-->
     </main>
@@ -216,7 +221,7 @@
                     </div><!--logo-footer-->
                     <div class="icon-social">
                         <a href="https://www.linkedin.com/feed/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://web.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
                         <a href="https://docs.google.com/" target="_blank"><i class="bi bi-file-earmark-text"></i></a>
                     </div><!--btn-sobre-->
                 </div><!--flex-->

@@ -20,26 +20,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 });
-
-//ROLAGEM PARA OS DIFERENCIAIS
-document.addEventListener('DOMContentLoaded', () => {
-    const dif = document.querySelectorAll('.diferenciais-box');
-
-    if (window.innerWidth <= 1020) {
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                } else {
-                    entry.target.classList.remove('active');
-                }
-            });
-        }, { threshold: 0.8 });
-
-        dif.forEach(dif => {
-            observer.observe(dif);
-        });
-
-    }
-});
