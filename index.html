@@ -16,7 +16,7 @@
         }
 
         header.active {
-            background-color: #0c0b11;
+            background-color: #000000d3;
             padding: 1rem 10rem;
             font-size: 1.1rem;
             transition: .3s ease all;
@@ -34,29 +34,43 @@
                 padding: 1rem;
                 height: 4rem;
             }
+
+            nav.active {
+                right: 0;
+            }
+
+            #overlay.active {
+                display: flex;
+            }
         }
     </style>
 </head>
 
 <body class="bg-sky-950">
     <header
-        class="sticky top-0 flex items-center justify-between bg-sky-950 text-white opacity-95 w-full h-20 text-xl duration-100 z-1000">
-        <h1 class="font-bold text-2xl lg:text-4xl">Rodrigo.</h1>
+        class="sticky top-0 flex items-center justify-between bg-sky-950 text-white w-full h-20 text-xl duration-100 z-400">
+        <h1 class="font-bold text-2xl lg:text-4xl">Rodrigo<span class="text-sky-500">.</span></h1>
         <nav
-            class="hidden flex flex-col lg:flex-row top-0 right-0 h-full w-4/5 lg:w-auto lg:relative lg:flex lg:gap-3 bg-black lg:bg-transparent p-2">
-            <button id="btn-fechar-menu" class="flex lg:hidden text-3xl text-sky-500 mb-5"><i
-                    class="bi bi-x-lg"></i></button>
-            <a class="hover:text-sky-500 duration-300 ease-in-out" href="#"><i class="bi bi-house-fill"></i> Inicio</a>
-            <a class="hover:text-sky-500 duration-300 ease-in-out" href="#sobre"><i class="bi bi-person-fill"></i>
+            class="flex fixed flex-col lg:flex-row border-l-3 border-sky-500 lg:border-0 top-0 -right-full lg:right-0 h-full w-4/5 lg:w-auto lg:relative lg:flex lg:gap-3 bg-black opacity-100 transition-all lg:bg-transparent p-2 z-1000">
+            <button id="btn-fechar" class="flex lg:hidden text-3xl text-sky-500 mb-5"><i
+                    class="bi bi-x-lg cursor-pointer"></i></button>
+            <a class="text-2xl mb-2 lg:text-xl hover:text-sky-500 duration-300 ease-in-out" href="#"><i
+                    class="bi bi-house-fill"></i>
+                Inicio</a>
+            <a class="text-2xl mb-2 lg:text-xl hover:text-sky-500 duration-300 ease-in-out" href="#sobre"><i
+                    class="bi bi-person-fill"></i>
                 Sobre</a>
-            <a class="hover:text-sky-500 duration-300 ease-in-out" href="#formacao"><i class="bi bi-book-half"></i>
+            <a class="text-2xl mb-2 lg:text-xl hover:text-sky-500 duration-300 ease-in-out" href="#formacao"><i
+                    class="bi bi-book-half"></i>
                 Formação</a>
-            <a class="hover:text-sky-500 duration-300 ease-in-out" href="#habilidades"><i
+            <a class="text-2xl mb-2 lg:text-xl hover:text-sky-500 duration-300 ease-in-out" href="#habilidades"><i
                     class="bi bi-lightbulb-fill"></i> Habilidades</a>
-            <a class="hover:text-sky-500 duration-300 ease-in-out" href="#contato"><i class="bi bi-telephone-fill"></i>
+            <a class="text-2xl mb-2 lg:text-xl hover:text-sky-500 duration-300 ease-in-out" href="#contato"><i
+                    class="bi bi-telephone-fill"></i>
                 Contato</a>
         </nav>
-        <button id="btn-menu" class="lg:hidden cursor-pointer text-3xl"><i class="bi bi-list"></i></button>
+        <div id="overlay" class="fixed flex w-full h-full bg-black opacity-90 left-0 top-0 z-500 hidden"></div>
+        <button id="btn-menu" class="lg:hidden cursor-pointer text-4xl"><i class="bi bi-list"></i></button>
     </header>
     <section
         class="flex flex-col-reverse lg:flex-row h-auto lg:h-[calc(100dvh-5rem)] justify-between items-center bg-sky-950 text-white">
@@ -335,17 +349,7 @@
             <p>&copy; 2025 Rodrigo. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script>
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-
-            if (window.scrollY > 0) {
-                header.classList.add('active');
-            } else {
-                header.classList.remove('active');
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
